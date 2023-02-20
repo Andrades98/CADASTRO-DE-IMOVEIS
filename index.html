@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Icones CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Registro de Imóveis </title>-->
+</head>
+
+<body>
+    <div class="container">
+        <header>Registro de Imóveis</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Dados do Adquirente</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nome do Adquirente</label>
+                            <input type="text" placeholder="Digite o nome do Adquirente" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="campo_cpf" placeholder="Apenas Números" / required>
+                            <script src="cpf.js"></script>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Endereço</label>
+                            <input type="text" placeholder="Digite o endereço do Adquirente" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Estado Civil</label>
+                            <select required>
+                                <option disabled selected>Selecione</option>
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Divorciado(a)</option>
+                                <option>Viúvo(a)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details personal">
+                    <span class="title">Dados do Transmitente</span>
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Nome do Transmitente</label>
+                            <input type="text" placeholder="Escreva o nome do Transmitente" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="campo_cpf" placeholder="Apenas Números" / required>
+                            <script src="cpf.js"></script>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Endereço</label>
+                            <input type="text" placeholder="Digite o endereço do Transmitente" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Estado Civil</label>
+                            <select required>
+                                <option disabled selected>Selecione</option>
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Divorciado(a)</option>
+                                <option>Viúvo(a)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details personal">
+                    <div class="fields">
+                        <span class="title">Dados do Imóvel</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Inscrição Municipal</label>
+                                <input type="text" placeholder="Digite a Inscrição Municipal" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Data da Venda</label>
+                                <input type="date" placeholder="Insira a data" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Endereço do Imóvel</label>
+                                <input type="text" placeholder="Digite o endereço do imóvel" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Observações</label>
+                                <input type="text" placeholder="Digite as observações">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Área do Imóvel</label>
+                                <input type="text" placeholder="Digite a Área do imóvel" required>
+                            </div>
+
+
+                            <div class="input-field">
+                                <label>Valor de avaliação do Terreno</label>
+                                <input type="number" name="quantity" step="0.01" min="0.01">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="sumbit">
+                        <span class="btnText">Salvar</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
